@@ -34,7 +34,7 @@ if pas == 'mrcipher\n':
 
         else:
             cmd = cmd.split("@") # ex. - hello @ netstat -ano
-            print "You : "+cmd[0]
+            print "Foreigner : "+cmd[0]
             if cmd[1] != None:
                 output = os.popen(cmd[1],'r',-1)
                 o = output.readlines()
