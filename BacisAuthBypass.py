@@ -6,6 +6,8 @@
 # Description   :   This tool [BAB] perform dictionary attack on those password protected websites which
 #                   are using userbase authentication. 
 
+# NOTE          :  Keep revisiting the site for updated version. 
+
 import urllib2
 import sys
 import itertools
