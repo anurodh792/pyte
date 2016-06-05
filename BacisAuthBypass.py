@@ -1,7 +1,16 @@
+#!/usr/bin/env python
+
+# Auther        :   Anurodh vishwakarma
+# Email         :   anurodh892@gmail.com || anurodh792@outlook.com
+# File          :   BasicAuthBypass.py [BAB.py]
+# Description   :   This tool [BAB] perform dictionary attack on those password protected websites which
+#                   are using userbase authentication. 
+
 import urllib2
 import sys
 import itertools
 if len(sys.argv) < 2:
+    print " BAB "
     print "\nBasic_Auth.py -d <url> <wordlist> <username>"
     print "Basic_Auth.py -p <url> <username> <string>\n"
     print "-d       -->>        Perform dictionary attack"
