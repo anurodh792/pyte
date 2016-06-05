@@ -1,22 +1,22 @@
 #!/usr/bin/env python
 
 # File      : Admin Password Cracker. [ APC.py ]
-# Auther    : Anurodh Vishwakarma.  [[ Mr. Cipher ]]
+# Auther    : Anurodh Vishwakarma.  
 # Email     : anurodh792@gmail.com || anurodh792@outlook.com
 # Follow at : http://www.facebook.com/anurodhv
 # Uses      : APC.py [ admin url ] [ dictioanry path ]
 # Ex        : APC.py  http://www.abcd.com/admin  D:\wordlist.txt
 
 # NOTE      : mechanize library must be installed.
-#           : Download it form here -> http://www.anurodhvishwakarma.com/mechanize/download.html
+#           : Download it form here -> http://www.github.com/pyte/pyte
 
 # This tool perform the dictionary attack. Try 1024 password per minute [Tested on localhost].
-# This tool is open source and freely available to download from http://www.anurodhvishwakarma.com.
+# This tool is open source and freely available to download from http://www.github.com/pyte/pyte.
 # This tool is bydefault crack password for the username admin. 
 
 # NOTE      : If the webpage contain more than to form feild, it just failed. 
 
-# Copyright (c) 2013 http://www.anurodhvishwakarma.com [[ Mr. Cipher ]]
+# Copyright (c) 2013 http://www.github.com/pyte/pyte 
 
 import string
 import urllib
@@ -60,7 +60,7 @@ if len(sys.argv) < 3:
     print "Example  :  APC.py http://www.site.com/admin D:\wordlist.txt\n"
     print "            OR \n"       
     print "         :  APC.py http://www.site.com/admin /root/wordlist.txt\n"      
-    print "Copyright (c) 2013 http://www.anurodhvishwakarma.com [[ Mr. Cipher ]] "
+    print "Copyright (c) 2013 http://www.github.com/pyte/pyte. "
 else:
     admin_url = sys.argv[1]
     path = sys.argv[2]
@@ -115,14 +115,14 @@ else:
                     print "\n" + top(len(password)+35)
                     print "|  Your Password For "+ userid +" is : " + password +"  |"
                     print top(len(password)+35)
-                    print "\nCopyright (c) 2013 http://www.anurodhvishwakarma.com"
+                    print "\nCopyright (c) 2013 http://www.github.com/pyte/pyte"
                     break
             if br.response().geturl() == error_url:
                 print "\n[-] Sorry ! Password is not in the dictionary."
                 print "[-] Try another dictionary."
                 print "[-] OR username admin does not exist."
                 print "[-] Tried "+str(len(passwords))+" passwords.\n"
-                print "Copyright (c) 2013 http://www.anurodhvishwakarma.com"
+                print "Copyright (c) 2013 http://www.github.com/pyte/pyte"
                                                  
 
   
